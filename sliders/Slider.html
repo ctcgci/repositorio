@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body style="padding:0px; margin:0px; background-color:#fff;font-family:'Open Sans',sans-serif,arial,helvetica,verdana">
+
+    <!-- #region Jssor Slider Begin -->
+    <script src="js/jssor.slider-23.1.6.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $AutoPlaySteps: 2,
+              $SlideDuration: 1000,
+              $SlideWidth: 470,
+              $SlideSpacing: 10,
+              $Cols: 8,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$,
+                $Steps: 4
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $SpacingX: 1,
+                $SpacingY: 1
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 2400);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+    <style>
+        /* jssor slider bullet navigator skin 03 css */
+        /*
+        .jssorb03 div           (normal)
+        .jssorb03 div:hover     (normal mouseover)
+        .jssorb03 .av           (active)
+        .jssorb03 .av:hover     (active mouseover)
+        .jssorb03 .dn           (mousedown)
+        */
+        .jssorb03 {
+            position: absolute;
+        }
+        .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 21px;
+            height: 21px;
+            text-align: center;
+            line-height: 21px;
+            color: white;
+            font-size: 12px;
+            background: url('img/b03.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb03 div { background-position: -5px -4px; }
+        .jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
+        .jssorb03 .av { background-position: -65px -4px; }
+        .jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
+
+        /* jssor slider arrow navigator skin 03 css */
+        /*
+        .jssora03l                  (normal)
+        .jssora03r                  (normal)
+        .jssora03l:hover            (normal mouseover)
+        .jssora03r:hover            (normal mouseover)
+        .jssora03l.jssora03ldn      (mousedown)
+        .jssora03r.jssora03rdn      (mousedown)
+        .jssora03l.jssora03ldn      (disabled)
+        .jssora03r.jssora03rdn      (disabled)
+        */
+        .jssora03l, .jssora03r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+            background: url('img/a03.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora03l { background-position: -3px -33px; }
+        .jssora03r { background-position: -63px -33px; }
+        .jssora03l:hover { background-position: -123px -33px; }
+        .jssora03r:hover { background-position: -183px -33px; }
+        .jssora03l.jssora03ldn { background-position: -243px -33px; }
+        .jssora03r.jssora03rdn { background-position: -303px -33px; }
+        .jssora03l.jssora03lds { background-position: -3px -33px; opacity: .3; pointer-events: none; }
+        .jssora03r.jssora03rds { background-position: -63px -33px; opacity: .3; pointer-events: none; }
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:950px;height:270px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('img/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:950px;height:270px;overflow:hidden;">
+            
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1S5bhTdXe2s4sMPD7DwolixHc-45dCE0D" /></a>
+			</div>
+			
+			<div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1vvQwpDlCwV9yO6G4rbd5T_Dx7J_4Ag51" /></a>
+			</div>
+			
+			<div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1idsiiXxtMkksPGntR0dPemSGzIm2mRIU" /></a>
+			</div>
+			
+			<div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1LTRG-5vqgXVxyCfuhwyW2u4XE0exr6Db" /></a>
+			</div>
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1R8UBfrErWe8lbaXjl48bXjIhOfMIBZrD" /></a>
+			</div>
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1cdbH-huv4cB_n9kCTSoMDedR6nuOw-8j" /></a>
+			</div>
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1qbZW7ik-THvYnQbAn5q-aWyy-YVN4D_x" /></a>
+			</div>
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1sBQbNK_eXzHvmfnTerdaynG3mMY-E5Hn" /></a>
+			</div>
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1NVuHLe5b08zWT8Dv9wUFjFhmJ4QV0iy4" /></a>
+			</div>
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1Xi6OA8DY956XQl7iz9heKOiXIQXQQuCE" /></a>
+			</div>
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1xAHG3DyAb8kfgXGWUKWvfrEP4kJQurHV" /></a>
+			</div>
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1_xqPREz2owYNMGU7j7JkqyFqaugpGe2o" /></a>
+			</div>
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=18iD4oTwA_M8vHF-owLB8SIgzcXQFOK5-" /></a>
+			</div>
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1mwS6EIgDRBCB6BdcSWkDxBDyRr6Tf2No" /></a>
+			</div>
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=11Lv4oqnP6VMkn3sKcYjYbEpoRXLhmNfP" /></a>
+			</div>
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1aSLvmSHrwXZrK_bLiKGffFOEHJ9xsmvt" /></a>
+			</div>
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1Lts49y3rYQ-TKFL_nc1Ak0BGWy0tGlav" /></a>
+			</div>
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1ppCYUBRHrco5Ng3PUUfCT481mnrvBc-k" /></a>
+			</div>
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1Y7lcJekxbcanthl_LB5QK6mAw6cGRo65" /></a>
+			</div>
+			
+            <div>
+                <img data-u="image" src="http://drive.google.com/uc?export=view&id=1QVWKIuvDOKpBWLN85ZBLLOveAEu7l4z7" /></a>
+			</div>
+			
+            
+            
+<!--		<div>
+                <img data-u="image" src="img/010.jpg" />
+            </div>
+
+            http://drive.google.com/uc?export=view&id=
+           
+            <div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSexUtwGDlYrdYa7Od1ATya1ATXCgHKxCHMCxzHGieZqEhoaEA/viewform?c=0&w=1" target="_blank"><img data-u="image" src="img/020.jpg" /></a>
+            </div> 
+
+-->
+            
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb03" style="bottom:10px;right:10px;">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:21px;height:21px;">
+                <div data-u="numbertemplate"></div>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora03l" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora03r" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
+</body>
+</html>
